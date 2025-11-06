@@ -549,31 +549,32 @@ document.addEventListener('click', (e) => {
 // Process data for each project
 const processData = {
     "coffee-shop": {
-        title: "Brew & Sip Coffee Shop Experience",
-        description: "A comprehensive e-commerce website for a specialty coffee shop, designed to showcase their products and create an immersive brand experience for coffee enthusiasts. The project focused on creating a warm, inviting digital space that reflects the coffee shop's atmosphere while ensuring seamless online ordering functionality.",
-        image: "./img/Coffeeshop.png",
-        tools: "Figma, Adobe Illustrator, Photoshop, Principle",
-        timeline: "5 weeks",
+        title: "Deja Buys",
+        description: "In Liberia's growning digital economy, consumers lack a dedicated, intuitive e commerce platform that understands their context. The friction of finding goods, comparing prices and making secure payments online remains a significant barrier.",
+        image: "./img/dejamockup.JPG",
+        behanceLink: "https://www.behance.net/gallery/237160329/The-Deja-Buys-E-Commerce-Project-Presentation?tracking_source=project_owner_other_projects",
+        tools: "Figma",
+        timeline: "3 weeks",
         category: "UI/UX Design, E-commerce",
-        client: "Brew & Sip Coffee Roasters",
+        client: "Deja Buys",
         stages: [
             {
                 title: "Problem Statement & Definition",
                 icon: "fas fa-question-circle",
-                description: "The client needed an e-commerce platform that could effectively showcase their specialty coffee products while providing an engaging user experience that reflects their brand's artisanal values. The main challenge was creating a digital experience that captures the warmth and personal touch of their physical coffee shop while enabling seamless online purchasing.",
-                deliverables: ["Problem Statement Document", "Project Goals", "Success Metrics"]
+                description: "Deja Buys needed a modern e-commerce platform that could handle their diverse product catalog while providing a personalized shopping experience. The main challenge was creating a unified system that could effectively showcase both high-end fashion items and everyday essentials while maintaining brand consistency and enabling intelligent product recommendations.",
+                deliverables: ["Problem Statement Document", "Project Goals", "Success Metrics", "Scope Definition"]
             },
             {
                 title: "Research & Analysis",
                 icon: "fas fa-search",
-                description: "I conducted comprehensive market research to understand the specialty coffee e-commerce landscape, analyzing competitors and identifying industry best practices. This included studying user behavior patterns in online food and beverage purchasing, examining conversion optimization techniques, and researching how to effectively communicate product quality and brand story digitally.",
-                deliverables: ["Competitive Analysis", "Market Research Report", "User Behavior Analysis"]
+                description: "I conducted extensive market research to understand the competitive landscape of modern e-commerce platforms, analyzing both direct competitors and industry leaders. This included studying emerging trends in personalized shopping, AI-driven recommendations, and omnichannel retail experiences to identify opportunities for differentiation and innovation.",
+                deliverables: ["Competitive Analysis Report", "Market Trends Analysis", "SWOT Analysis", "Opportunity Mapping"]
             },
             {
                 title: "Stakeholder Interviews",
                 icon: "fas fa-comments",
-                description: "I conducted in-depth interviews with the coffee shop owners, baristas, and management team to understand their business goals, brand values, and operational requirements. These conversations helped identify key features needed, such as subscription management, gift options, and educational content about coffee origins and brewing methods.",
-                deliverables: ["Stakeholder Interview Notes", "Business Requirements Document", "Feature Prioritization Matrix"]
+                description: "I facilitated workshops with Deja Buys' leadership, marketing team, and operations managers to align on business objectives and technical requirements. These sessions focused on defining the platform's core capabilities, including advanced search functionality, wishlist management, inventory synchronization, and seamless checkout processes across all product categories.",
+                deliverables: ["Stakeholder Requirements", "Business Objectives Document", "Feature Roadmap", "KPI Definitions"]
             },
             {
                 title: "User Personas Development",
