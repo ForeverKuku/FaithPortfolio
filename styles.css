@@ -699,8 +699,10 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/* Overlay Effect (Hidden by default, shows on hover) */
-.portfolio-overlay {
+
+
+/* Video Overlay Effect (Hidden by default, shows on hover) */
+.video-section .portfolio-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -714,9 +716,12 @@ nav ul li a:hover::after {
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none; /* Allows clicks to pass through to the video if needed */
+    z-index: 2;
 }
 
-.portfolio-item:hover .portfolio-overlay {
+/* Trigger overlay when hovering over the video item */
+.video-item:hover .portfolio-overlay {
     opacity: 1;
 }
 
@@ -725,32 +730,61 @@ nav ul li a:hover::after {
     font-size: 1.2rem;
 }
 
-.portfolio-item {
+.video-item {
     position: relative;
     width: 100%;
-    padding-top: 177.77%; /* This maintains the 9:16 aspect ratio for Shorts */
+    /* Maintains the 9:16 aspect ratio for vertical videos/Shorts */
+    padding-top: 177.77%; 
     overflow: hidden;
+    border-radius: 12px; /* Optional: adds a nice rounded corner to your videos */
 }
 
-.portfolio-video {
+/* Ensure the iframe fills the container behind the overlay */
+.video-item iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: none;
+    z-index: 1;
 }
 
-/* Ensure overlay stays on top of the iframe */
-.portfolio-overlay {
+/* Container for the videos */
+.video-grid {
+    display: grid;
+    /* This creates a grid where videos won't exceed 280px each */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 280px)); 
+    gap: 30px;
+    justify-content: center; /* Centers the grid on the page */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-item {
+    position: relative;
+    width: 100%;
+    /* Keeps the 9:16 vertical ratio */
+    padding-top: 177.77%; 
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Adds a subtle lift */
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px); /* Slight pop-up effect on hover */
+}
+
+/* Ensure the iframe fills the small container */
+.video-item iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
-    pointer-events: none; /* Allows user to click the video through the overlay */
-    background: rgba(0,0,0,0.4); /* Adjust transparency as needed */
+    border: none;
 }
 
 /* Design Process Styling */
